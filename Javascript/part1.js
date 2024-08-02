@@ -1,8 +1,29 @@
-let array = [0, 1, 2, 3, 4];
-// expected output [1, 2, 3, 4, 5]
+//Simple Variable
+let myvar = 2;
+console.log(myvar);
+console.log(myvar ** 2);
 
-for (let index = 0; index < array.length; index++) {
-  array[index] += 1;
+//Data Types and Structures
+let NewVar = 1000;
+console.log(typeof NewVar);
+NewVar = NewVar.toString();
+console.log(NewVar);
+console.log(typeof NewVar);
+
+//Object Oriented Programming
+class Person {
+  constructor(Name, Age) {
+    this.Name = Name;
+    this.Age = Age;
+  }
+
+  getName = () => {
+    return this.Name;
+  };
+  getAge = () => {
+    return this.Age;
+  };
 }
-console.log(array);
-// add 1 to each element
+let PersonFirst = new Person("John", 20);
+console.log(PersonFirst.getName());
+console.log(PersonFirst.getAge());
