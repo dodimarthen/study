@@ -15,6 +15,7 @@ class Person {
   constructor(Name, Age) {
     this.Name = Name;
     this.Age = Age;
+    this.job = "";
   }
 
   getName = () => {
@@ -22,6 +23,10 @@ class Person {
   };
   getAge = () => {
     return this.Age;
+  };
+
+  setJob = (job) => {
+    this.job = job;
   };
 }
 
@@ -47,7 +52,7 @@ class Home {
     this.residents.push(resident);
   };
 }
-
+/*
 let John = new Person("John", 25);
 let Doe = new Person("Doe", 19);
 
@@ -56,4 +61,19 @@ console.log(myhome.getResidents());
 
 let Janny = new Person("Janny", 28);
 myhome.addResident(Janny);
-console.log(myhome.getResidents());
+console.log(myhome.getResidents());*/ //.................SIMPLE OOP
+
+/*
+let Lucas = new Person("Lucas", 25); 
+let myhome = new Home("alabama street", 821374, []); 
+Lucas.setJob("Software Engineer"); 
+myhome.addResident(Lucas); 
+console.log(myhome.getResidents());  //..............ABSTRACTION WITH CLASSES
+*/
+
+//ABSTRACTION
+function calculateTriangle(base, height) {
+  return (base * height) / 2;
+}
+
+// console.log(calculateTriangle(10, 8)); //ExpectedOutput: 40
